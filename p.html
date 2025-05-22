@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang=" en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title[>My portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #808080;
+        color: #ffffff;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 30px;
+        background: rgba(92, 77, 66, 0.726);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      img {
+        max-width: 3000px;
+        border-radius: 50%;
+        border: 3px solid #ffffff;
+      }
+
+      nav {
+        margin-bottom: 20px;
+      }
+
+      button {
+        background-color: #003366;
+        color: #ffffff;
+        border: none;
+        padding: 10px 15px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #ffcc00;
+      }
+
+      section {
+        background-color: #003366;
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(189, 187, 187, 0.692);
+        display: none;
+      }
+
+      .b1,
+      .b2,
+      .b3 {
+        background-color: grey;
+        height: 36px;
+        border-radius: 18px;
+      }
+
+      .t1,
+      .t2 {
+        background-color: rgba(17, 202, 226, 0.932);
+
+
+      }
+
+      h2 {
+        color: #ffcc00;
+      }
+
+      a {
+        color: #ffcc00;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        margin: 5px 0;
+      }
+
+      .contact-info a {
+        margin-right: 15px;
+      }
+
+      #expertise {
+        background-color: #003366;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      #expertise h2 {
+        color: white;
+      }
+
+      .expertise-area {
+        margin-bottom: 15px;
+      }
+
+      .progress-bar {
+        background-color: #e0e0e0;
+        border-radius: 5px;
+        height: 10px;
+        width: 100%;
+      }
+
+      .progress {
+        background-color: rgba(17, 202, 226, 0.932);
+        height: 100%;
+        border-radius: 5px;
+      }
+    </style>
+</head>
+
+<body>
+  <header>
+    <h1>Beselemu Rashwedi Digital Showcase</h1>
+    <hr>
+    <img src="c:\Users\HP\Pictures\Camera Roll\20250228_171654.jpg" alt="Rashwedi Beselemu" height="200px"
+      width="150px">
+    <p>I am a passionate computer scientist with a focus on innovative technology solutions. My journey in computing
+      has equipped me with a diverse skill set and a commitment to lifelong learning.</p>
+    <h3>Tagline: Harnessing technology to drive impactful solutions.</h3>
+    <nav>
+      <button onclick="showSection('about')">About Me</button>
+      <button onclick="showSection('expertise')">Expertise</button>
+      <button onclick="showSection('skills')">Technical Skills</button>
+      <button onclick="showSection('projects')">Projects</button>
+      <button onclick="showSection('contact')">Contact Me</button>
+    </nav>
+  </header>
+  <section id="about">
+    <h2>About Me</h2>
+    <p><strong>Educational Background:</strong></p>
+
+    <li>Currently i'm doing a Bachelor of Science in Computer Science at Midlands State University.</li>
+    <br>
+    <p><b>Relevant certifications</b></p>
+
+
+    <li>Data Science Certification</li>
+    <li>Web Development Bootcamp</li>
+
+
+
+    <p><strong>Interests in Computing:</strong> Exploring machine learning and its applications; enthusiastic about
+      software development and user experience design.</p>
+  </section>
+  <section id="expertise">
+    <h2>Expertise / Areas of Interest</h2>
+    <div class="expertise-area">
+      <span>Web Development</span>
+      <div class="progress-bar">
+        <div class="progress" style="width: 90%;"></div>
+      </div>
+    </div>
+    <div class="expertise-area">
+      <span>Data Science</span>
+      <div class="progress-bar">
+        <div class="progress" style="width: 70%;"></div>
+      </div>
+    </div>
+    <div class="expertise-area">
+      <span>Artificial Intelligence</span>
+      <div class="progress-bar">
+        <div class="progress" style="width: 80%;"></div>
+      </div>
+    </div>
+    <div class="expertise-area">
+      <span>Cybersecurity</span>
+      <div class="progress-bar">
+        <div class="progress" style="width: 65%;"></div>
+      </div>
+    </div>
+
+
+  </section>
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <p><strong>Programming Languages:</strong> </p>
+    <button class="b1">C#</button> <button class="b2">Python</button> <button class="b3">JavaScript</button>
+    <p><strong>Tools/Technologies:</strong> Git | Docker| TensorFlow| React</p>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+
+
+    <h3 class="t2">Project 1:Smart Home Automation System</h3>
+    </p>
+    <p>
+
+      I developed a system to control home appliances remotely using IoT devices, enhancing convenience and energy
+      efficiency.</p>
+    <h3 class="t1">Project 2:Personal Finance Tracker </h3>
+    <p>I created an application that helps users manage their finances by tracking expenses, generating reports, and
+      setting budgets effectively.</p>
+  </section>
+  <section id="contact" class="contact-info">
+    <p>
+    <h2>Contct me on: </h2>beselemurashwedi@gmail.com</p>
+    <p>Social Media:</p>
+    <a href="https://www.facebook.com/share/16NNT9FkJS/?mibextid=qi2Omg"><img
+        src="c:\Users\HP\Pictures\Camera Roll\10464408.png" alt="facebook" style="width: 50px; height: 50px;"></a>
+    <a href="https://x.com/rashwedi?"><img src="c:\Users\HP\Pictures\Camera Roll\10464257.png" alt="twitter"
+        style="width: 50px; height: 50px;"></a>
+
+    <a href="https://www.linkedin.com/in/rashwedi-beselemu-751735359"><img
+        src="c:\Users\HP\Pictures\Camera Roll\vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930480.png"
+        alt="LinkedIn" style="width: 50px; height: 50px;"></a>
+    <a href="https://www.tiktok.com/@mashwede2p"><img
+        src="c:\Users\HP\Pictures\Camera Roll\4362958_tiktok_logo_social media_icon.png" alt="TikTok"
+        style="width: 50px; height: 50px;"></a>
+
+  </section>
+  <footer>
+    &copy;copyright @2025 Rashwedi Beselemu
+
+  </footer>
+  </footer>
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(sectionId).style.display = 'block';
+    }
+  </script>
+</body>
+
+</html>
